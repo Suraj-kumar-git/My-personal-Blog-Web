@@ -19,9 +19,40 @@
             <%=post.content.substring(0, 100) + " ..." %>
               <a href="/posts/<%=post.title%>">Read More</a>
           </p>
-          <p style="font-size: 14px; color: #777;" id="post-date"></p>
+          <p style="font-size: 14px; color: #777;" class="publish-date"></p>
         </li>
         <% }) %>
+        <li>
+          <h2 style="color: #007bff; margin-bottom: 5px;">
+            <%=dPosts[0].title%>
+          </h2>
+          <p>
+            <%=dPosts[0].content.substring(0, 100) + " ..." %>
+              <a href="/blogs/blogging">Read More</a>
+          </p>
+          <p style="font-size: 14px; color: #777;"class="publish-date"></p>
+        </li>
+        <li>
+          <h2 style="color: #007bff; margin-bottom: 5px;">
+            <%=dPosts[1].title%>
+          </h2>
+          <p>
+            <%=dPosts[1].content.substring(0, 100) + " ..." %>
+              <a href="/blogs/react-vs-angular">Read More</a>
+          </p>
+          <p style="font-size: 14px; color: #777;" class="publish-date"></p>
+        </li>
+        <li>
+          <h2 style="color: #007bff; margin-bottom: 5px;">
+            <%=dPosts[2].title%>
+          </h2>
+          <p>
+            <%=dPosts[2].content.substring(0, 100) + " ..." %>
+              <a href="/blogs/springboot">Read More</a>
+          </p>
+          <p style="font-size: 14px; color: #777;" class="publish-date"></p>
+        </li>
+        
     </ul>
   </div>
 

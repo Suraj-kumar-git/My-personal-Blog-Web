@@ -1,16 +1,19 @@
-
 </div>
 <div class="footer-padding"></div>
-  <div class="footer">
-    <p>Made with ❤️ by Suraj Kumar</p>
-  </div>
+<div class="footer">
+  <p>Made with ❤️ by Suraj Kumar</p>
+</div>
 </div>
 <script>
   var currentDate = new Date();
 
   // Format the date as desired (e.g., "June 1, 2023")
   var formattedDate = currentDate.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
-  document.getElementById("post-date").textContent = "Published on: " + formattedDate;
+  var elements = document.getElementsByClassName("publish-date");
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].textContent = "Published on: " + formattedDate;;
+  }
 </script>
 </body>
+
 </html>

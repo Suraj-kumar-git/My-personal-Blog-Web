@@ -1,0 +1,33 @@
+<%- include("partials/header"); -%>
+  <h1>Home</h1>
+  <h1 style="color: #333; font-size: 28px; text-align: center;">Welcome back, Suraj..!</h1>
+  <div style="text-align: center; margin-top: 30px;">
+    <a href="/compose"
+      style="background-color: #007bff; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px;">Create
+      New Post</a>
+  </div>
+
+  <div style="background-color: #f7f7f7; padding: 20px; margin-top: 30px;">
+    <h2 style="color: #333; font-size: 24px;">Recent Blog Posts</h2>
+    <ul style="list-style: none; padding-left: 0;">
+      <% posts.forEach(function(post){ %>
+        <li>
+          <h3 style="color: #007bff; font-size: 20px; margin-bottom: 5px;">
+            <%=post.title%>
+          </h3>
+          <p>
+            <%=post.content.substring(0, 100) + " ..." %>
+              <a href="/posts/<%=post.title%>">Read More</a>
+          </p>
+          <p style="font-size: 14px; color: #777;" id="post-date"></p>
+        </li>
+        <% }) %>
+    </ul>
+  </div>
+
+  <div style="text-align: center; margin-top: 30px;">
+    <a href="/compose"
+      style="background-color: #007bff; color: #fff; padding: 10px 20px; border-radius: 4px;">Create
+      New Post</a>
+  </div>
+  <%- include("partials/footer"); -%>

@@ -8,13 +8,13 @@
   </div>
 
   <div style="background-color: #f7f7f7; padding: 20px; margin-top: 30px;">
-    <h2 style="color: #333; font-size: 24px;">Recent Blog Posts</h2>
+    <h3 style="color: #333;">Recent Blog Posts</h3>
     <ul style="list-style: none; padding-left: 0;">
       <% posts.forEach(function(post){ %>
         <li>
-          <h3 style="color: #007bff; font-size: 20px; margin-bottom: 5px;">
+          <h2 style="color: #007bff; margin-bottom: 5px;">
             <%=post.title%>
-          </h3>
+          </h2>
           <p>
             <%=post.content.substring(0, 100) + " ..." %>
               <a href="/posts/<%=post.title%>">Read More</a>
